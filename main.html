@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        <header>
+            <nav class="flex justify-between items-center">
+                <div class="flex gap-4 ml-3">
+                    <img class="w-12" src="assets/Group.png" alt="">
+                    <div>
+                        <h1 class="text-2xl font-bold">$45000</h1>
+                        <p>available balance</p>
+                    </div>
+                </div>
+                <button class="btn mr-3 border-gray-300 rounded">Logout</button>
+            </nav>
+            <hr class="mt-4 text-gray-400 text-3xl">
+
+            <section class="mt-5 ml-5">
+                <h1 class="text-2xl font-bold mb-3">Welcome to Payooo!</h1>
+                <p class="text-gray-500">Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
+
+                <div class="cards grid grid-cols-3 gap-3 mr-3 mt-5">
+                    <div class="border-gray-400 border rounded pt-2 pb-2 cursor-pointer">
+                        <img class="w-6 m-auto" src="assets/wallet1.png" alt="">
+                        <h3 class="text-lg text-center ">Add Money</h3>
+                    </div>
+                    <div class="border-gray-400 border rounded pt-2 pb-2 cursor-pointer">
+                        <img class="w-6 m-auto" src="assets/money1.png" alt="">
+                        <h3 class="text-lg text-center ">Cashout</h3>
+                    </div>
+                    <div class="border-gray-400 border rounded pt-2 pb-2 cursor-pointer">
+                        <img class="w-6 m-auto" src="assets/send1.png" alt="">
+                        <h3 class="text-lg text-center ">Transfer Money</h3>
+                    </div>
+                    <div class="border-gray-400 border rounded pt-2 pb-2 cursor-pointer">
+                        <img class="w-6 m-auto" src="assets/bonus1.png" alt="">
+                        <h3 class="text-lg text-center ">Get Bonus</h3>
+                    </div>
+                    <div class="border-gray-400 border rounded pt-2 pb-2 cursor-pointer">
+                        <img class="w-6 m-auto" src="assets/money1.png" alt="">
+                        <h3 class="text-lg text-center ">Pay Bill</h3>
+                    </div>
+                    <div class="border-gray-400 border rounded pt-2 pb-2 cursor-pointer">
+                        <img class="w-6 m-auto" src="assets/transaction1.png" alt="">
+                        <h3 class="text-lg text-center ">Transactions</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                      <div class="card bg-base-300 w-full max-w-sm shrink-0 shadow-xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <legend class="label-text font-bold text-black">Select Bank</legend>
+                            <select class="select select-bordered w-full max-w-xs">
+                                <option disabled selected >Select a Bank</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nagad">Nagad</option>
+                                <option value="DBBL">DBBL</option>
+                                <option value="IBL">IBL</option>
+                              </select>
+                              <label class="label">
+                                <span class="label-text font-bold text-black">Mobile Number</span>
+                              </label>
+                              <input value="017-XXXXX-XXX" id="phone-number" type="tel" placeholder="Enter your number" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                              <label class="label">
+                                <span class="label-text font-bold text-black">4 Digit Pin</span>
+                              </label>
+                              <input value="1234" id="pin-number" type="pin" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                              <button id="login-btn" class="btn bg-[#0874F2] w-80 text-white rounded-full">Add Money</button>
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </header>
+
+        
+    </section>
+
+</body>
+
+</html>
