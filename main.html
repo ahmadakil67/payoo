@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <title>Payoo</title>
 </head>
 
 <body class="bg-slate-800">
@@ -49,7 +49,7 @@
                         <img class="w-6 m-auto" src="assets/money1.png" alt="">
                         <h3 class="text-lg text-center ">Pay Bill</h3>
                     </div>
-                    <div class="border-gray-400 border rounded pt-2 pb-2 cursor-pointer">
+                    <div id="Transaction-box" class="border-gray-400 border rounded pt-2 pb-2 cursor-pointer">
                         <img class="w-6 m-auto" src="assets/transaction1.png" alt="">
                         <h3 class="text-lg text-center ">Transactions</h3>
                     </div>
@@ -67,7 +67,7 @@
                         <form class="card-body">
                           <div class="form-control">
                             <legend class="label-text font-bold text-black">Select Bank</legend>
-                            <select class="select select-bordered w-full max-w-xs">
+                            <select id="allbank" class="select select-bordered w-full max-w-xs">
                                 <option disabled selected >Select a Bank</option>
                                 <option value="Bkash">Bkash</option>
                                 <option value="Nagad">Nagad</option>
@@ -77,7 +77,7 @@
                               <label class="label">
                                 <span class="label-text font-bold text-black">Mobile Number</span>
                               </label>
-                              <input value="017-XXXXX-XXX" id="phone-number" type="tel" placeholder="Enter your number" class="input input-bordered" required />
+                              <input value="017-XXXXX-XXX" id="phone-number-add" type="tel" placeholder="Enter your number" class="input input-bordered" required />
                             </div>
                             <div class="form-control">
                               <label class="label">
@@ -129,13 +129,23 @@
                     </div>
                   </div>
             </section>
+
+            <section id="transection-history">
+              <h1 class="text-3xl font-bold text-red-400 text-center p-3">Transaction History</h1>
+              
+              <div id="transection-container">
+              
+              </div>
+              </section>
         </header>
 
         
     </section>
 <script src="script/addMoney.js"></script>
+<script src="utilities/utilities.js"></script>
 <script src="script/toggle.js"></script>
 <script src="script/cashout.js"></script>
+<script src="script/transectionHistory.js"></script>
 </body>
 
 </html>

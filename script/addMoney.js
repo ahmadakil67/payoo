@@ -1,20 +1,32 @@
 document.getElementById('add-money').addEventListener('click', function(event){
     event.preventDefault();
 
-    const amount = document.getElementById('amount').value;
-    const convertedAmount = parseFloat(amount);
+    const amount = getInputValueByID('amount');
 
-    const pin = document.getElementById('pin-number').value;
-    const convertedPin = parseInt(pin);
+    const pin = getInputValueByID('pin-number');
 
-    const mainBalance = document.getElementById('main-balance').innerText;
-    const convertedMainBalance = parseFloat(mainBalance);
+    const mainBalance = getInnerTextByID('main-balance');
 
-    if(convertedPin === 1234){
-        totalAmount = convertedMainBalance + convertedAmount;
-        document.getElementById('main-balance').innerText = totalAmount;
+    const acount = document.getElementById("phone-number-add").value;
+
+    const selectedBank = document.getElementById("allbank").value;
+
+    if(pin === 1234){
+        totalAmount = mainBalance + amount;
+        setInnerTextByIDandValue('main-balance', totalAmount);
+
+        const container = document.getElementById("transection-container");
+
+        const div = document.createElement("div");
+        div.classList.add("bg-red-400")
+        div.innerHTML = `
+        <h1 class="text-yellow-300">Added Money form ${selectedBank}</h1>
+        <h3>${amount}</h3> 
+        <p>account number: ${acount}</p>
+          `
+        container.appendChild(div)
     }
     else{
-        console.log("Nothng");
+        console.log("Nothing");
     }
 })
